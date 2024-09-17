@@ -13,6 +13,7 @@
     text-align: center;
     color: rgb(255, 238, 0);
     text-shadow: 2px 2px 5px black;
+    
 }
 #cellBox{
     display: grid;
@@ -21,7 +22,6 @@
     margin: auto;
 }
 body{
-    background-image: url("gradient_bg.png");
     background-repeat: repeat-x;
     background-color: rgb(25, 78, 78);
 }

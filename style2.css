@@ -1,0 +1,7 @@
+.bodyss{
+    background-image: linear-gradient(rgb(80, 105, 104),rgb(25, 78, 78));
+    background-repeat: repeat-x;
+}
+body{
+    background-color:  rgb(25, 78, 78);
+}
