@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<div class="title">
+    <h1>Tic Tac Toe</h1>
+    <button onclick="window.location.href='homescreen.html'">Back</button>
+</div>
+<body class="bodis">
     <div id="gameBox">
-        <h1>Tic Tac Toe</h1>
-        <button onclick="window.location.href='homescreen.html'">Back</button>
         <div id="cellBox">
             <div class="cell" cellIndex="0"></div>
             <div class="cell" cellIndex="1"></div>
@@ -23,8 +25,8 @@
             <div class="cell" cellIndex="8"></div>
         </div>
         <h2 id="statusText"></h2>
-        <button id="restartBtn">restart</button>
     </div>
+    <button id="restartBtn">restart</button>
     <script src="index.js"></script>
 </body>
 </html>

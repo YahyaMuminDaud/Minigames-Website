@@ -1,10 +1,10 @@
 .cell{
-    width: 75px;
-    height: 75px;
+    width: 150px;
+    height: 150px;
     border: 2px solid;
     box-shadow: 0 0 0 2px;
     line-height: 75px;
-    font-size: 50px;
+    font-size: 100px;
     cursor: pointer;
     color: rgb(255, 238, 0);
 }
@@ -13,15 +13,59 @@
     text-align: center;
     color: rgb(255, 238, 0);
     text-shadow: 2px 2px 5px black;
-    
+    margin-top: 100px;
+    margin-right: 255px;
 }
 #cellBox{
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
+    margin-right: auto;
 }
 body{
     background-repeat: repeat-x;
     background-color: rgb(25, 78, 78);
+}
+.bodis{
+    background-image: linear-gradient(rgb(80, 105, 104),rgb(25, 78, 78));
+    background-repeat: repeat-x; 
+}
+
+#restartBtn{
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    height: 200%;
+    margin-top: 100px;
+    font-family: "Heavitas", cursive;
+    margin-left: 825px;
+}
+#restartBtn:hover {
+    background-color: yellow; 
+    box-shadow: 0 5px #666;
+}
+
+#restartBtn:active {
+  background-color: rgb(255, 174, 0);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.title{
+    font-family: "Heavitas", cursive;
+    text-align: center;
+    color: rgb(255, 238, 0);
+    text-shadow: 2px 2px 5px black;
+}
+#statusText{
+    margin-left: 255px;
 }
