@@ -68,7 +68,6 @@ body{
     inset: 0;
     background: #209d7b;
     transition: 0.25s;
-    transform: rotateY(0deg);
     backface-visibility: hidden;
 }
 
