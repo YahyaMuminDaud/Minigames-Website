@@ -56,6 +56,24 @@ body{
     background: #fff;
     transition: 0.25s;
     margin-block: 8px;
+    transform: rotateY(180deg);
+}
+.item.boxOpen {
+    transform: rotateY(0deg);
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #209d7b;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.boxOpen::after, .boxMatch::after {
+    transform: rotateY(180deg);
 }
 .game {
     display: grid;
