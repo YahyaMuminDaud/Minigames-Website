@@ -1,0 +1,79 @@
+.bodyss{
+    background-image: linear-gradient(rgb(80, 105, 104),rgb(25, 78, 78));
+    background-repeat: repeat-x; 
+    margin-bottom: 20px;
+}
+body{
+    background-color:  rgb(25, 78, 78);
+}
+.middle {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    color: yellow;
+    font-family: "Heavitas", cursive;
+    font-size: 30px;
+    margin-top: -20px; 
+}
+#restartBtn{
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    height: 200%;
+    margin-top: 10px;
+    font-family: "Heavitas", cursive;
+    margin-left: 825px;
+}
+#restartBtn:hover {
+    background-color: yellow; 
+    box-shadow: 0 5px #666;
+}
+
+#restartBtn:active {
+  background-color: rgb(255, 174, 0);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.item {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    border-radius: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background: #fff;
+    transition: 0.25s;
+    margin-block: 8px;
+}
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#backBtn{
+    margin-left: 500px;
+    margin-top: 30px;
+    background-color: rgb(184, 176, 67);
+    font-family: "Heavitas", cursive;
+    border: none;
+}
+#backBtn:hover{
+    box-shadow: 0 3px 3px rgb(0, 0, 0), 0 3px 5px 0 rgb(0, 0, 0);
+    background-color:rgb(184, 176, 67);
+    color: yellow; 
+}
