@@ -6,34 +6,38 @@
     line-height: 150px;
     font-size: 100px;
     cursor: pointer;
-    color: rgb(255, 238, 0);
-    text-align: center; 
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
-#gameBox{
+
+#gameBox {
     font-family: "Heavitas", cursive;
     text-align: center;
-    color: rgb(255, 238, 0);
-    text-shadow: 2px 2px 5px black;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
     margin-top: 10px;
     margin-right: 255px;
 }
-#cellBox{
+
+#cellBox {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
     margin-right: auto;
 }
-body{
+
+body {
+    background-image: linear-gradient(rgb(210, 228, 227), rgb(84, 180, 180));
     background-repeat: repeat-x;
-    background-color: rgb(25, 78, 78);
-}
-.bodis{
-    background-image: linear-gradient(rgb(80, 105, 104),rgb(25, 78, 78));
-    background-repeat: repeat-x; 
 }
 
-#restartBtn{
+.bodis {
+    background-image: linear-gradient(rgb(80, 105, 104), rgb(25, 78, 78));
+    background-repeat: repeat-x;
+}
+
+#restartBtn {
     background-color: yellow;
     border: none;
     color: black;
@@ -51,37 +55,148 @@ body{
     font-family: "Heavitas", cursive;
     margin-left: 825px;
 }
+
 #restartBtn:hover {
-    background-color: yellow; 
+    background-color: yellow;
     box-shadow: 0 5px #666;
 }
 
 #restartBtn:active {
-  background-color: rgb(255, 174, 0);
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+    background-color: rgb(255, 174, 0);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
-.title{
+
+.title {
     font-family: "Heavitas", cursive;
     text-align: center;
     color: rgb(255, 238, 0);
     text-shadow: 2px 2px 5px black;
 }
-#statusText{
+
+#statusText {
     margin-left: 255px;
 }
-#xoxo{
+
+#xoxo {
     font-size: 40px;
 }
-#backBtn{
+
+#backBtn {
     margin-left: 500px;
     margin-top: 50px;
     background-color: rgb(184, 176, 67);
     font-family: "Heavitas", cursive;
     border: none;
 }
-#backBtn:hover{
+
+#backBtn:hover {
     box-shadow: 0 3px 3px rgb(0, 0, 0), 0 3px 5px 0 rgb(0, 0, 0);
-    background-color:rgb(184, 176, 67);
-    color: yellow; 
+    background-color: rgb(184, 176, 67);
+    color: yellow;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .cell {
+        width: 135px;
+        height: 135px;
+        border: 2px solid;
+        box-shadow: 0 0 0 2px;
+        line-height: 150px;
+        font-size: 100px;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    #gameBox {
+        font-family: "Sour Gummy", sans-serif;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        margin-top: 10px;
+        margin-right: 255px;
+    }
+
+    #cellBox {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 125px;
+        margin: auto;
+        margin-right: auto;
+    }
+
+    body {
+        background-color: rgb(84, 180, 180);
+    }
+
+    .bodis {
+        background-image: linear-gradient(rgb(210, 228, 227), rgb(84, 180, 180));
+        background-repeat: repeat-x;
+    }
+
+    #restartBtn {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 40px;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+        height: 200%;
+        font-family: "Sour Gummy", sans-serif;
+        margin-left: 630px;
+    }
+
+    #restartBtn:hover {
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 5px #666;
+    }
+
+    #restartBtn:active {
+        background-color: rgb(217, 217, 217);
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+    .title {
+        font-family: "Sour Gummy", sans-serif;
+        text-align: center;
+        color: rgb(255, 238, 0);
+        text-shadow: 2px 2px 5px black;
+    }
+
+    #statusText {
+        margin-left: 285px;
+    }
+
+    #xoxo {
+        font-size: 40px;
+        margin-left: 30px;
+        color: white;
+    }
+
+    #backBtn {
+        margin-left: 400px;
+        margin-top: 50px;
+        background-color: rgb(255, 255, 255);
+        font-family: "Sour Gummy", sans-serif;
+        border: none;
+        color: black;
+    }
+
+    #backBtn:hover {
+        box-shadow: 0 12px 16px rgb(0, 0, 0), 0 7px 5rgb(0, 0, 0)yellow;
+        background-color: rgb(230, 230, 230);
+        color: rgb(0, 0, 0);
+    }
+
+
 }
